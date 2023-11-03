@@ -86,7 +86,15 @@ body{
   
 }
 .sender{
-  width: 130px;
+  
+}
+.sender li{
+  margin-top: 10px;  
+  border-radius: 20px;
   background-color: #4492a9;
+  width: 130px;
+  padding: 10px;
   margin-left: auto;
+  margin-top: 10px;
+  
 }

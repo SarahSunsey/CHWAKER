@@ -1,0 +1,24 @@
+/* Apply CSS for the containers */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent body overflow */
+  }
+  
+  .nav_bar {
+    background-color: #9f081a; /* Navbar color */
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /* Add a shadow to elevate */
+  }
+  
+  .logout_icon {
+    float: right; /* Float the icon to the right */
+    margin-right: 25px; /* Add some right margin for spacing */
+    cursor: pointer; /* Change the cursor to a pointer to indicate interactivity */
+    height: 25px;
+    width: 25px;
+  }

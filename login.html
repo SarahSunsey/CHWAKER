@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet"  href="css/allpages.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-  <nav class="nav_bar">
-    App Name
-  </nav>
-  
-  <script src="script.js"></script> <!-- Link to the JavaScript file -->
+                <form class="login">
+                    <h2 class="form-title">Login to App name</h2>
+                    <div class="login__field">
+                        <label for="username">Username / Email:</label>
+                        <input id="username" type="text" class="login__input" placeholder="User name / Email">
+                    </div>
+                    <div class="login__field">
+                        <label for="password">Password:</label>
+                        <input id="password" type="password" class="login__input" placeholder="Password">
+                    </div>
+                    <button class="login__submit" onclick="handleLogin()">
+                        <span class="button__text">Log In Now</span>
+                        
+                    </button>
+                </form>
+
+                <script src="script.js"></script> <!-- Link to the JavaScript file -->
 </body>
 </html>

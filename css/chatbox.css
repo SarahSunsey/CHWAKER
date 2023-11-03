@@ -36,6 +36,10 @@ body{
 }
 .messages-content{
   height: 500px;
+  display: flex;
+  flex-direction: column;
+  
+  
 }
 .avatar img{
   height: 80px;
@@ -67,3 +71,22 @@ body{
   background-color: #0056b3; /* Change the color on hover */
 }
 
+.reciever ,.sender{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.reciever{
+  background-color: rgb(12, 12, 36);
+  width: 130px;
+  
+}
+.sender{
+  width: 130px;
+  background-color: #4492a9;
+  margin-left: auto;
+}

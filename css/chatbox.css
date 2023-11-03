@@ -2,17 +2,19 @@
 body{
   margin: 0;
   padding: 0;
+  box-sizing: content-box;
+  height: 90vh;
 }
-    .chat-title {
-        text-align: center; /* Center-align text and inline elements */
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Center-align block-level elements */
-    }
-    /* Apply styles to the container */
+.chat-title {
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: center; /* Center-align text and inline elements */
+  align-items: center; /* Center-align block-level elements */
+}
+/* Apply styles to the container */
    
 .container {
-  width: 300px; /* Set the desired width */
+  width: 100vw; /* Set the desired width */
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -22,17 +24,22 @@ body{
 /* Style the message area */
 .messages {
   padding: 10px;
-  
-  background-color: #f0f0f0;
   max-height: 300px; /* Set a maximum height for the message area */
-  overflow-y: auto; /* Add a scrollbar if messages overflow */
 }
 
 /* Style the message input and send button */
+.chat{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .message-box {
   display: flex;
   align-items: center;
   padding: 10px;
+  justify-content: space-around;
 }
 .messages-content{
   height: 500px;
@@ -52,7 +59,7 @@ body{
 .message-input {
   flex: 1; /* Take up remaining space */
   padding: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #444;
   border-radius: 5px;
   font-size: 14px;
 }
@@ -61,7 +68,7 @@ body{
   background-color: #007bff;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 5px 10px;
   margin-left: 10px;
   cursor: pointer;

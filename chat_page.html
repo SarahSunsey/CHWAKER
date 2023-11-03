@@ -3,12 +3,14 @@
 <head>
     <link rel="stylesheet"  href="css/allpages.css">
     <link rel="stylesheet"  href="css/chatpage.css">
+    <link rel="stylesheet"  href="css/logoutdialog.css">
 </head>
 <body>
   <nav class="nav_bar">
     App Name
-    <img class= logout_icon src="images/logout.png" alt="logout" onclick="logout()">
+    <img class= logout_icon src="images/logout.png" alt="logout" onclick="handleLogout()">
   </nav>
+
   <div class="journalist_list">
 
     <div class="journalist" onclick="goToProfilePage()">
@@ -110,6 +112,16 @@
     </div>
   </div>
 
+  <!-- Logout Dialog -->
+  <div id="logoutDialog" class="logout-dialog">
+    <div class="logout-dialog-content">
+        <h3>Are you sure you want to log out?</h3>
+        <button id="logoutCancel" class="logout-button cancel-button" onclick="cancelLogout()">Cancel</button>
+        <button id="logoutConfirm" class="logout-button confirm-button" onclick="doLogout()">Confirm Logout</button>
+    </div>
+  </div>
+
   <script src="script.js"></script> <!-- Link to the JavaScript file -->
+
 </body>
 </html>

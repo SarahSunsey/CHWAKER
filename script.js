@@ -1,8 +1,18 @@
+logoutDialog = document.getElementById("logoutDialog");
+
 function goToProfilePage() {
     window.location.href = 'profile.html';
 }
 
-function logout() {
+function handleLogout() {
+    logoutDialog.style.display = "flex";
+}
+
+function cancelLogout() {
+    logoutDialog.style.display = "none";
+}
+
+function doLogout() {
     window.location.href = 'login.html';
 }
 

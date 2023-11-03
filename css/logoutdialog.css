@@ -1,0 +1,47 @@
+/* Style for the logout confirmation dialog container */
+.logout-dialog {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background overlay */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the logout confirmation dialog content */
+.logout-dialog-content {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the buttons in the dialog */
+.logout-button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+	border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-button {
+    background-color: #ccc;
+}
+
+.confirm-button {
+    background-color:  #9c061a;
+    color: #fff;
+}
+
+.cancel-button:hover {
+    background-color: #bbb;
+}
+
+.confirm-button:hover {
+    background-color: #bf282e;
+}

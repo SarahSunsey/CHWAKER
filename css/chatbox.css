@@ -15,9 +15,7 @@ body{
    
 .container {
   width: 100vw; /* Set the desired width */
-  border: 1px solid #ccc;
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: auto;
 }
 
@@ -25,6 +23,7 @@ body{
 .messages {
   padding: 10px;
   max-height: 300px; /* Set a maximum height for the message area */
+  position: relative;
 }
 
 /* Style the message input and send button */
@@ -45,6 +44,7 @@ body{
   height: 500px;
   display: flex;
   flex-direction: column;
+  justify-content: end;
   
   
 }

@@ -7,7 +7,7 @@
 <body>
     <div class="chat">
         <div class="chat-title">
-            <h3>Journalist Name</h3>
+            <h3>Ouail Dahdouh</h3>
             <div class="avatar">
                 <img src="images/reporter.png" />
             </div>
@@ -25,12 +25,15 @@
                 </div>
             </div>
         </div>
-        <div class="message-box">
-            <input type="text" class="message-input">
-            <button type="submit" class="message-submit">Send</button>
-        </div>
+        <form class="message-box" id="form">
+            <input type="text" class="message-input" id="">
+            <button type="submit" class="message-submit"id="">Send</button>
+        </form>
     </div>
 
-    
+    <script src="http://localhost:3025/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io()
+    </script>
 </body>
 </html>
